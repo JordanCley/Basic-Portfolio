@@ -1,0 +1,74 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  } 
+  
+body {
+    /* background-image: url("../images/so-white.png"); */
+    background-color: gainsboro;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    float: left;
+    padding: 0;
+    background-color: #4aaaa5;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+
+h2 {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+nav {
+    background-color: grey;
+    padding: 25px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+
+
+hr {
+    color: #777777;
+    height: 2px;
+}
+
+img {
+    max-width: 150px;
+    float: left;
+    margin: 15px;
+}
+
+span {
+    font-size: 2rem;
+}
+
+.Main {
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #ffffff;
+    border: solid 1px #dddddd;
+    width: 960px;
+    line-height: 1.6;
+    color: #777777;
+}
+
+#myName {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #ffffff;
+    background-color: #4aaaa5; 
+}

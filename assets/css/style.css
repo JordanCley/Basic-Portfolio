@@ -1,9 +1,9 @@
+
 *, *::after, *::before {
     box-sizing: border-box;
 }  
   
 body {
-    /* background-image: url("../images/so-white.png"); */
     background-color: gainsboro;
     margin: 0;
     padding: 0;
@@ -42,7 +42,10 @@ hr {
 	box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }
 
-img {
+
+
+/* ******** Bio Picture ********* */
+.bioPic {
     max-width: 150px;
     float: left;
     margin: 15px;
@@ -52,6 +55,30 @@ span {
     font-size: 2rem;
 }
 
+
+
+/* ******** Photo Grid Start ******** */
+.grid {
+    margin: 0 10px 0 10px;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+}
+  
+  /* ******** Clearfix (clear floats) ******** */
+  .grid::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* ********* Photo Grid Stop ********* */
+
+
+
+/* ********* Form ********* */
 .form {
     width: 100%;
     border: 2px solid #dddddd;
@@ -59,15 +86,13 @@ span {
     padding: 5px;
 }
 
-#button {
-    background-color: #4aaaa5;
-    font-size: 20px;
-    color: #ffffff;
-}
 
+
+
+/* *********Nav Start********* */
 .nav {
     overflow: hidden;
-    margin: 0 12.7% 0 12.7%;
+    margin: 0 11% 0 11%;
   }
   
 .nav a {
@@ -101,7 +126,12 @@ span {
 .nav-right {
     float: right;
 }
+/* *********** Nav End *********** */
 
+
+
+
+/* ********** Main Content Container ******* */
 .Main {
     margin: 30px auto;
     padding: 50px;
@@ -112,6 +142,9 @@ span {
     color: #777777;
 }
 
+
+
+/* ******** Logo (Name) ********* */
 #myName {
     float: left;
     padding: 35px;

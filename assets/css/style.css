@@ -1,180 +1,168 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
-*, *::after, *::before {
-    box-sizing: border-box;
-}  
-  
 body {
-    background-color: gainsboro;
-    margin: 0;
-    padding: 0;
+  background-color: gainsboro;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    font-family: 'Georgia', Times, Times New Roman, serif;
+  font-family: "Georgia", Times, Times New Roman, serif;
 }
 
 h2 {
-    color: #4aaaa5;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    font-size: 1.5em;
+  color: #4aaaa5;
+  font-family: "Georgia", Times, Times New Roman, serif;
+  font-size: 1.5em;
 }
 
 header {
-    background-color:#ffffff;
-    height: 100px; 
+  background-color: #ffffff;
+  height: 100px;
 }
 
 hr {
-    color: #777777;
-    height: 5px;
-	border: 0;
-	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+  color: #777777;
+  height: 5px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }
 
 span {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 /* ******** Bio Picture ********* */
 .bioPic {
-    max-width: 150px;
-    float: left;
-    margin: 15px;
+  max-width: 150px;
+  float: left;
+  margin: 15px;
 }
-
-
 
 .footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    background-color: #777777;
-    height: 100px;
-    padding-top: 40px;
-    border-top: solid 20px #4aaaa5;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: #777777;
+  height: 100px;
+  padding-top: 40px;
+  border-top: solid 20px #4aaaa5;
 }
 
-
-/* ******** Photo Grid Start ******** */
+/* ******** Photo Grid ******** */
 .grid {
-    margin: 0 10px 0 10px;
+  margin: 0 10px 0 10px;
 }
 
 .column {
-    position: relative;
-    float: left;
-    width: 33.3%;
-    padding: 10px;
+  position: relative;
+  float: left;
+  width: 33.3%;
+  padding: 10px;
 }
 
 .column::before {
-    content: "Rock Scissor Paper";
-    text-align: center;
-    padding-top: 08px;
-    margin: 0 20px 0 10px;
-    border: solid 1px #8c8b8b;
-    width: 260px;
-    height: 40px;
-    position: absolute;
-    color: #edf3f3;
-    background-color: #4aaaa5;
-    z-index: 1;
-    left: -1px;
+  content: "Rock Scissor Paper";
+  text-align: center;
+  padding-top: 08px;
+  margin: 0 20px 0 10px;
+  border: solid 1px #8c8b8b;
+  width: 260px;
+  height: 40px;
+  position: absolute;
+  color: #edf3f3;
+  background-color: #4aaaa5;
+  z-index: 1;
+  left: -1px;
 }
-  
-  /* ******** Clearfix (clear floats) ******** */
-  .grid::after {
-    content: "";
-    clear: both;
-    display: table;
+
+/* ******** Clearfix (clear floats) ******** */
+.grid::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 /* ********* Photo Grid Stop ********* */
 
-
-
 /* ********* Form ********* */
 .form {
-    width: 100%;
-    border: 2px solid #dddddd;
-    border-radius: 5px;
-    padding: 5px;
+  width: 100%;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 #button {
-    width: 100px;
-    height: 50px;
-    background-color: #4aaaa5;
-    color: #ffffff;
-    font-size: 20px;
+  width: 100px;
+  height: 50px;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  font-size: 20px;
 }
-
-
-
 
 /* *********Nav Start********* */
 .nav {
-    overflow: hidden;
-    margin: 0 11% 0 11%;
-  }
-  
+  overflow: hidden;
+  margin: 0 11% 0 11%;
+}
+
 .nav a {
-    float: left;
-    color: #777777;
-    text-align: center;
-    padding: 35px 16px;
-    text-decoration: none;
-    font-size: 1.5em;
+  float: left;
+  color: #777777;
+  text-align: center;
+  padding: 35px 16px;
+  text-decoration: none;
+  font-size: 1.5em;
 }
 
 .nav a::after {
-    content: "|";
-    margin: 2px 0 0 30px;
-    float: right;
-    color: #777777;
+  content: "|";
+  margin: 2px 0 0 30px;
+  float: right;
+  color: #777777;
 }
 
 .nav a:last-child::after {
-    display: none;
-}
-  
-.nav a:hover {
-    color: #4aaaa5;
+  display: none;
 }
 
- .nav h1:hover {
-    color: black;
+.nav a:hover {
+  color: #4aaaa5;
+}
+
+.nav h1:hover {
+  color: black;
 }
 
 .nav-right {
-    float: right;
+  float: right;
 }
 /* *********** Nav End *********** */
 
-
-
-
 /* ********** Main Content Container ******* */
 .Main {
-    margin: 30px auto;
-    padding: 50px;
-    background-color: #ffffff;
-    border: solid 1px #dddddd;
-    width: 960px;
-    line-height: 1.6;
-    color: #777777;
+  margin: 30px auto;
+  padding: 50px;
+  background-color: #ffffff;
+  border: solid 1px #dddddd;
+  width: 960px;
+  line-height: 1.6;
+  color: #777777;
 }
-
-
 
 /* ******** Logo (Name) ********* */
 #myName {
-    float: left;
-    padding: 35px;
-    background-color: #4aaaa5;
-    margin: 0;
-    color: #ffffff;
-    font-size: 1.5em;
-    height: 100px;
+  float: left;
+  padding: 35px;
+  background-color: #4aaaa5;
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.5em;
+  height: 100px;
 }

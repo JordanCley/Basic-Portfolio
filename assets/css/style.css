@@ -24,17 +24,6 @@ header {
     height: 100px; 
 }
 
-footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    background-color: #777777;
-    height: 100px;
-    padding-top: 70px;
-}
-
 hr {
     color: #777777;
     height: 5px;
@@ -42,7 +31,9 @@ hr {
 	box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }
 
-
+span {
+    font-size: 2rem;
+}
 
 /* ******** Bio Picture ********* */
 .bioPic {
@@ -51,10 +42,19 @@ hr {
     margin: 15px;
 }
 
-span {
-    font-size: 2rem;
-}
 
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #777777;
+    height: 100px;
+    padding-top: 40px;
+    border-top: solid 20px #4aaaa5;
+}
 
 
 /* ******** Photo Grid Start ******** */
@@ -63,9 +63,25 @@ span {
 }
 
 .column {
+    position: relative;
     float: left;
     width: 33.3%;
     padding: 10px;
+}
+
+.column::before {
+    content: "Rock Scissor Paper";
+    text-align: center;
+    padding-top: 08px;
+    margin: 0 20px 0 10px;
+    border: solid 1px #8c8b8b;
+    width: 260px;
+    height: 40px;
+    position: absolute;
+    color: #edf3f3;
+    background-color: #4aaaa5;
+    z-index: 1;
+    left: -1px;
 }
   
   /* ******** Clearfix (clear floats) ******** */
@@ -84,6 +100,14 @@ span {
     border: 2px solid #dddddd;
     border-radius: 5px;
     padding: 5px;
+}
+
+#button {
+    width: 100px;
+    height: 50px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 20px;
 }
 
 

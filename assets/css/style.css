@@ -1,6 +1,6 @@
 *, *::after, *::before {
     box-sizing: border-box;
-  } 
+}  
   
 body {
     /* background-image: url("../images/so-white.png"); */
@@ -16,6 +16,7 @@ h1 {
 h2 {
     color: #4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 1.5em;
 }
 
 header {
@@ -36,7 +37,9 @@ footer {
 
 hr {
     color: #777777;
-    height: 2px;
+    height: 5px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }
 
 img {
@@ -49,9 +52,22 @@ span {
     font-size: 2rem;
 }
 
+.form {
+    width: 100%;
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#button {
+    background-color: #4aaaa5;
+    font-size: 20px;
+    color: #ffffff;
+}
+
 .nav {
     overflow: hidden;
-    margin: 0 25% 0 25%;
+    margin: 0 12.7% 0 12.7%;
   }
   
 .nav a {
@@ -78,15 +94,10 @@ span {
     color: #4aaaa5;
 }
 
-.nav h1:hover {
+ .nav h1:hover {
     color: black;
 }
-  
-.nav a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-  
+
 .nav-right {
     float: right;
 }
